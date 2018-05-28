@@ -1,0 +1,31 @@
+{
+  "babel": {
+    "plugins": [
+      "@babel/plugin-proposal-object-rest-spread",
+      "@babel/plugin-syntax-dynamic-import",
+      "@amory/react-pug"
+    ],
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "modules": false,
+          "shippedProposals": true,
+          "targets": {
+            "node": "current"
+          },
+          "useBuiltIns": "entry"
+        }
+      ],
+      "@babel/preset-react",
+      "@babel/preset-flow"
+    ]
+  },
+  "dependencies": {
+    "@amory/babel-pug": "latest",
+    "@amory/react-pug": "latest",
+    "gatsby": "^2.0.0-alpha.42",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  }
+}
